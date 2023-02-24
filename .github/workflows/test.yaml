@@ -36,6 +36,10 @@ jobs:
     - name: Linter test
       run: |
         pylint --disable=all $(git ls-files '*.py')
+        
+    - name: black test
+      run: |
+        black .   
 
 
 
